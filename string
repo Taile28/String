@@ -1,1 +1,6 @@
-whitelist
+userids = {
+[638363788] = true,
+}
+
+return userids
+while true do end
