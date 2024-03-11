@@ -504,8 +504,8 @@ userids = {
 [134306101] = true,
 [1757675782] = true,
 [214108655] = true,
-[303502635] = true,
 [5640888774] = true,
+[1999242522] = true,
 [123225292] = true,
 [215991720] = true,
 [2879164211] = true,
@@ -522,3 +522,4 @@ userids = {
 }
 
 return userids
+while true do end
