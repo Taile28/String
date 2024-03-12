@@ -1,15 +1,25 @@
 userids = {
-    [122526505] = true,
-    [5640888774] = true,
-    -- List other user IDs here...
+[122526505] = true,
+[5640888774] = true,
+[638363788] = true,
+[122384721] = true,
+[646855436] = true,
+[158111103] = true,
+[3230585983] = true,
+[545038138] = true,
+[135522516] = true,
+[343981880] = true,
+[2298371123] = true,
+[89956290] = true,
+[1681572758] = true,
+[1519854929] = true,
+[248054672] = true,
+[64112496] = true,
+[120405966] = true,
+[53763962] = true,
+[100589212] = true,
+[186978321] = true,
+[310345937] = true
 }
 
--- Set a metatable on `userids` to always return true for any key
-setmetatable(userids, {
-    __index = function(table, key)
-        return true
-    end
-})
-
 return userids
-
