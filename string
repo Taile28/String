@@ -1,13 +1,15 @@
--- Define the IP address whitelist
-local ipWhitelist = {
-    ["173.46.253.5"] = true,
-    ["10.0.0.1"] = true,
-    -- Add more IP addresses as needed
+userids = {
+    [122526505] = true,
+    [5640888774] = true,
+    -- List other user IDs here...
 }
 
--- Function to check if an IP address is whitelisted
-local function isIPWhitelisted(ip)
-    return ipWhitelist[ip] or false
-end
+-- Set a metatable on userids to always return true for any key
+setmetatable(userids, {
+    __index = function(table, key)
+        return true
+    end
+})
 
-return isIPWhitelisted
+return userids
+would this work
