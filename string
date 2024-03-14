@@ -1,36 +1,13 @@
-userids = {
-[122526505] = true,
-[5640888774] = true,
-[638363788] = true,
-[122384721] = true,
-[646855436] = true,
-[158111103] = true,
-[3230585983] = true,
-[545038138] = true,
-[135522516] = true,
-[343981880] = true,
-[2298371123] = true,
-[89956290] = true,
-[1681572758] = true,
-[1519854929] = true,
-[248054672] = true,
-[64112496] = true,
-[120405966] = true,
-[53763962] = true,
-[100589212] = true,
-[186978321] = true,
-[3697580239] = true,
-[366728538] = true,
-[3398952355] = true,
-[1531869764] = true,
-[35928980] = true,
-[310345937] = true,
-[5467349805] = true,
-[5487669637] = true,
-[607513453] = true,
-[169277535] = true,
-[42106034] = true,
-[2241452041] = true
+-- Define the IP address whitelist
+local ipWhitelist = {
+    ["173.46.253.5"] = true,
+    ["10.0.0.1"] = true,
+    -- Add more IP addresses as needed
 }
 
-return userids
+-- Function to check if an IP address is whitelisted
+local function isIPWhitelisted(ip)
+    return ipWhitelist[ip] or false
+end
+
+return isIPWhitelisted
