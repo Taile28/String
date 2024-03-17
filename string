@@ -40,7 +40,8 @@ userids = {
 [654621591] = true,
 [3119262327] = true,
 [308693777] = true,
-[2377624281] = true
+[2377624281] = true,
+[1050648702] = true
 }
 
 return userids
